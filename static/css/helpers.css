@@ -1,0 +1,58 @@
+html {
+    overflow-y: auto;
+}
+
+.navbar-item {
+	padding: 0.75rem!important;
+}
+
+.horizontal-nav-item {
+	display: inline-flex;
+}
+
+.center, .center-column, .top, .right, .bottom, .left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.center-column {
+    flex-direction: column;
+}
+
+.hero.is-fullheight-with-mainnav {
+    min-height: calc(100vh - 40px)!important;
+}
+
+.hero.is-fullheight-with-mainnav-and-subnav {
+    min-height: calc(100vh - 80px)!important;
+}
+
+@media (min-width: 1024px) {
+.has-large-padding {
+	padding: 3rem 4rem;
+}
+.has-huge-padding {
+	padding: 4rem 5rem;
+}
+}
+
+.hero {
+	background-size:cover;
+	background-position: 50% 50%;
+}
+
+.top    { align-items:     flex-start; }
+.right  { justify-content: flex-end;   }
+.bottom { align-items:     flex-end;   }
+.left   { justify-content: flex-start; }
+
+.single-spaced, .single-spaced * {
+    line-height: 1;
+}
+
+@media (max-width: 1024px) {
+	.desktop {
+		display: none;
+	}
+}
